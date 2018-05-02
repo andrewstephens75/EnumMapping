@@ -1,6 +1,6 @@
 #  enum_mapping.h
 
-## A Typesafe way to convert c++ enum class values to strings and back
+## A typesafe way to convert c++ enum class values to strings and back
 
 We have all faced the problem of serializing our beautifully typesafe enum classes from and to the murky soups of text that are json, xml, ymal, or ini. Perhaps you have looked longingly at other languages that make this easy, with their fancy-pants reflection and annotations.
 
@@ -75,7 +75,7 @@ EnumMapping uses operator== to compare the value names, you might want to change
 
 ### Performance
 
-EnumMapping is designed to work on enums with only a few values. It uses a linear search to perform the lookups to avoid the overhead of setting up two maps. This is fine for a few values but if you need to serialize enums with dozens of valid values then a map-based solution would be better.
+EnumMapping is designed to work on enums with only a few values. It uses a linear search to perform the lookups to avoid the overhead of setting up two maps. This is fine for a 5 or 6 values but if you need to serialize enums with dozens of valid values then a map-based solution would be better.
 
 ### Exceptions
 
